@@ -1,0 +1,45 @@
+@import '../theme.css';
+
+.workflow-container {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.workflow {
+  background: var(--dark);
+  border-radius: 2px;
+  border: 1px solid var(--grey);
+  left: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+}
+
+@media (max-width: 767px) {
+  .workflow {
+    width: 99%;
+    height: 99%;
+  }
+}
+
+@media (min-width: 768px) {
+  .workflow {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .workflow {
+    width: 90%;
+    height: 70%;
+    max-width: 1200px;
+    max-height: 800px;
+  }
+}

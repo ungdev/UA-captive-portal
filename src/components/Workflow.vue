@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <h1>Connexion au réseau UTT arena</h1>
+  <div class="workflow-container">
+    <div class="workflow">
+      <h1 class="a-title a-title--blue">Connexion au réseau UTT arena</h1>
+    </div>
   </div>
 </template>
 
@@ -12,5 +14,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+@import './Workflow.css';
 </style>
