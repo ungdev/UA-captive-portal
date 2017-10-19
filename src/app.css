@@ -19,11 +19,20 @@ body, #app {
   height: 100%;
 }
 
-h1 {
+/* titles */
+h1, h2 {
   font-family: MotionControl, Impact, sans-serif;
   color: var(--cyan);
   text-transform: uppercase;
   margin: 5px 0;
+}
+
+h1 {
+  border-bottom: 1px solid var(--grey);
+}
+
+.center {
+  text-align: center;
 }
 
 h1.a-title {
@@ -31,4 +40,52 @@ h1.a-title {
   line-height: 64px;
   letter-spacing: 0;
   text-shadow: 1px 1px 0 var(--grey);
+}
+
+h2.a-title {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0;
+}
+
+/* form */
+.a-input {
+  background: var(--dark);
+  border: 1px solid var(--grey);
+  box-shadow: 0 2px 4px 0 var(--dark);
+  box-sizing: border-box;
+  color: var(--white);
+  font-size: 18px;
+  padding: 10px 15px;
+  display: block;
+}
+
+.a-input:focus {
+  outline: 0;
+}
+
+/* buttons */
+.a-button {
+  border: 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 12px 0 var(--grey),
+        inset 0 0 0 1px var(--black),
+        inset 0 0 0 2px var(--grey);
+  cursor: pointer;
+  font-family: MotionControl, Impact, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  height: 40px;
+  letter-spacing: 0px;
+  min-width: 175px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.a-button--blue {
+  background: var(--cyan);
+  color: var(--black);
+  box-shadow: 0 0 12px 0 var(--grey),
+        inset 0 0 0 1px var(--grey);
 }

@@ -1,14 +1,20 @@
 <template>
   <div class="workflow-container">
     <div class="workflow">
-      <h1 class="a-title a-title--blue">Connexion au réseau UTT arena</h1>
+      <h1 class="a-title a-title--blue center">Connexion au réseau UTT arena</h1>
+      <Login />
     </div>
   </div>
 </template>
 
 <script>
+import Login from './Login'
+
 export default {
-  name: 'Workflow'
+  name: 'Workflow',
+  components: {
+    Login
+  }
 }
 </script>
 
