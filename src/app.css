@@ -3,6 +3,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -60,6 +62,11 @@ h2.a-title {
   display: block;
 }
 
+form .a-input, form .a-button {
+  width: 100%;
+  max-width: 350px;
+}
+
 .a-input:focus {
   outline: 0;
 }
@@ -99,4 +106,9 @@ h2.a-title {
 
 .center-form-container {
   flex: 1;
+}
+
+.help-message {
+  margin-top: 20px;
+  text-align: center;
 }

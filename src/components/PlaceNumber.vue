@@ -9,6 +9,9 @@
         </div>
       </form>
     </div>
+    <div class="help-message">
+      Le numéro est écrit sur ta table.
+    </div>
   </div>
 </template>
 

@@ -10,6 +10,9 @@
         </div>
       </form>
     </div>
+    <div class="help-message">
+      Les informations demandées si dessous t'ont été données après ton inscription sur <b>arena.utt.fr</b>.
+    </div>
   </div>
 </template>
 
