@@ -48,14 +48,7 @@
   }
 }
 
-.workflow-item {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.step-counter {
+.step-number {
   background: var(--orange);
   color: black;
   font-family: MotionControl, Impact, sans-serif;
@@ -65,4 +58,11 @@
   margin-top: 15px;
   line-height: 20px;
   font-size: 20px;
+}
+
+.workflow-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }

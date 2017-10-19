@@ -89,3 +89,14 @@ h2.a-title {
   box-shadow: 0 0 12px 0 var(--grey),
         inset 0 0 0 1px var(--grey);
 }
+
+/* forms */
+.center-form > * {
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center-form-container {
+  flex: 1;
+}
