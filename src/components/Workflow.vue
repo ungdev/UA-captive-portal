@@ -5,7 +5,7 @@
       <div class="workflow-item">
         <div class="step-number">{{ step }} / 4</div>
         <Login v-if="step === 1" v-on:stepFinished="incrementStep" />
-        <PlaceNumber v-if="step === 2" v-on:stepFinished="incrementStep" />
+        <Spot v-if="step === 2" v-on:stepFinished="incrementStep" />
         <MacAddress v-if="step === 3" v-on:stepFinished="incrementStep" />
         <SuccessfulConnection v-if="step === 4" />
       </div>
@@ -15,7 +15,7 @@
 
 <script>
 import Login from './Login'
-import PlaceNumber from './PlaceNumber'
+import Spot from './Spot'
 import MacAddress from './MacAddress'
 import SuccessfulConnection from './SuccessfulConnection'
 
@@ -23,7 +23,7 @@ export default {
   name: 'Workflow',
   components: {
     Login,
-    PlaceNumber,
+    Spot,
     MacAddress,
     SuccessfulConnection
   },

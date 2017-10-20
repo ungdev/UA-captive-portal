@@ -100,8 +100,15 @@ form .a-input, form .a-button {
 /* forms */
 .center-form > * {
   margin-top: 10px;
+}
+
+.center-form .input-group > input {
   margin-right: auto;
   margin-left: auto;
+}
+
+.center-form .input-group > div {
+  text-align: center;
 }
 
 .center-form-container {
