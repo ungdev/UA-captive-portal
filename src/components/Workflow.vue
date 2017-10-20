@@ -4,9 +4,11 @@
       <h1 class="a-title a-title--blue center">Connexion au réseau UTT arena</h1>
       <div class="workflow-item">
         <div class="step-number">{{ step }} / 3</div>
-        <Login v-if="step === 1" v-on:stepFinished="incrementStep" />
-        <Spot v-else-if="step === 2" v-on:stepFinished="incrementStep" />
-        <SuccessfulConnection v-else />
+        <transition name="component-fade" mode="out-in">
+          <Login v-if="step === 1" v-on:stepFinished="incrementStep" />
+          <Spot v-else-if="step === 2" v-on:stepFinished="incrementStep" />
+          <SuccessfulConnection v-else />
+        </transition>
       </div>
     </div>
   </div>

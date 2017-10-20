@@ -127,3 +127,11 @@ form .a-input, form .a-button {
   padding-top: 4px;
   font-weight: bold;
 }
+
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .18s ease;
+}
+.component-fade-enter, .component-fade-leave-to
+/* .component-fade-leave-active avant la 2.1.8 */ {
+  opacity: 0;
+}
