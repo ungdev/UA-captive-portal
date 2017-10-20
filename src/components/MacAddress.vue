@@ -5,7 +5,7 @@
       <form class="center-form">
         <div class="input-group">
           <input v-model="macAddress" class="a-input" type="text" placeholder="Adresse MAC" />
-          <div v-if="submitted && !validateMacAddress">Adresse MAC invalide</div>
+          <div class="form-error" v-if="submitted && !validateMacAddress">Adresse MAC invalide</div>
         </div>
         <div class="center">
           <button type="button" class="a-button a-button--blue" @click="sendMacAddress">envoyer</button>

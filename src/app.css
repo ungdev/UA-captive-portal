@@ -119,3 +119,9 @@ form .a-input, form .a-button {
   margin-top: 20px;
   text-align: center;
 }
+
+.form-error {
+  color: var(--failure);
+  padding-top: 4px;
+  font-weight: bold;
+}

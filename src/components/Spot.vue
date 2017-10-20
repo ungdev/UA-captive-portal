@@ -5,7 +5,7 @@
       <form class="center-form">
         <div class="input-group">
           <input v-model="spot" class="a-input" type="text" placeholder="Numéro de place" />
-          <div v-if="submitted && !validateSpot">Numéro de place incorrect</div>
+          <div class="form-error" v-if="submitted && !validateSpot">Numéro de place incorrect</div>
         </div>
         <div class="center">
           <button type="button" class="a-button a-button--blue" @click="sendSpot">envoyer</button>

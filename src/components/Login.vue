@@ -5,11 +5,11 @@
       <form class="center-form">
         <div class="input-group">
           <input v-model="login" class="a-input" type="text" placeholder="Login" />
-          <div v-if="submitted && !validateLogin">Login incorrect</div>
+          <div class="form-error" v-if="submitted && !validateLogin">Login incorrect</div>
         </div>
         <div class="input-group">
           <input v-model="password" class="a-input" type="password" placeholder="Mot de passe" />
-          <div v-if="submitted && !validatePassword">Mot de passe incorrect</div>
+          <div class="form-error" v-if="submitted && !validatePassword">Mot de passe incorrect</div>
         </div>
         <div class="center">
           <button type="button" class="a-button a-button--blue" @click="submitLogin">s'authentifier</button>
