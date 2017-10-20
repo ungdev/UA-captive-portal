@@ -117,7 +117,18 @@ form .a-input, form .a-button {
 
 .help-message {
   margin-top: 20px;
-  text-align: center;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.help-message ul {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.help-message ul li b {
+  color: var(--orange);
 }
 
 .form-error {
