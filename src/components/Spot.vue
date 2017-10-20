@@ -31,7 +31,8 @@ export default {
   },
   computed: {
     validateSpot: function() {
-      return this.spot.length > 0
+      // format => [a-s][1-32] 
+      return (/^[a-s](\d|[1-2]\d|3[0-2])$/).test(this.spot)
     }
   },
   methods: {

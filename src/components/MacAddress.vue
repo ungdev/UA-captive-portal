@@ -28,7 +28,7 @@ export default {
   },
   computed: {
     validateMacAddress: function() {
-      return this.macAddress.length > 0
+      return (/^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$/).test(this.macAddress)
     }
   },
   methods: {

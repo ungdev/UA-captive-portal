@@ -37,11 +37,11 @@ export default {
   computed: {
     validateLogin: function() {
       // validate login
-      return this.login.length > 0
+      return this.login.length > 3
     },
     validatePassword: function() {
       // validate password
-      return this.password.length > 0
+      return this.password.length > 3
     }
   },
   methods: {
