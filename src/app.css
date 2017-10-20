@@ -122,15 +122,6 @@ form .a-input, form .a-button {
   border-radius: 2px;
 }
 
-.help-message ul {
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-.help-message ul li b {
-  color: var(--orange);
-}
-
 .form-error {
   color: var(--failure);
   padding-top: 4px;

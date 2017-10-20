@@ -3,11 +3,10 @@
     <div class="workflow">
       <h1 class="a-title a-title--blue center">Connexion au réseau UTT arena</h1>
       <div class="workflow-item">
-        <div class="step-number">{{ step }} / 4</div>
+        <div class="step-number">{{ step }} / 3</div>
         <Login v-if="step === 1" v-on:stepFinished="incrementStep" />
-        <Spot v-if="step === 2" v-on:stepFinished="incrementStep" />
-        <MacAddress v-if="step === 3" v-on:stepFinished="incrementStep" />
-        <SuccessfulConnection v-if="step === 4" />
+        <Spot v-else-if="step === 2" v-on:stepFinished="incrementStep" />
+        <SuccessfulConnection v-else />
       </div>
     </div>
   </div>
@@ -16,7 +15,6 @@
 <script>
 import Login from './Login'
 import Spot from './Spot'
-import MacAddress from './MacAddress'
 import SuccessfulConnection from './SuccessfulConnection'
 
 export default {
@@ -24,7 +22,6 @@ export default {
   components: {
     Login,
     Spot,
-    MacAddress,
     SuccessfulConnection
   },
   data() {
